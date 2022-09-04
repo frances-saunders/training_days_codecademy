@@ -1,4 +1,4 @@
-// The scope of `random` is too loose 
+//This script fulfills the project reqs for "Training Days" in Codecademy
 
 const getRandEvent = () => {
   const random = Math.floor(Math.random() * 3);
@@ -11,7 +11,7 @@ const getRandEvent = () => {
   }
 };
 
-// The scope of `days` is too tight 
+
 const getTrainingDays = event => {
 let days = '';
   if (event === 'Marathon') {
@@ -25,7 +25,6 @@ let days = '';
   return days;
 };
 
-// The scope of `name` is too tight 
 
 const logEvent = (name, event) => {
   console.log(`${name}'s event is: ${event}`);
@@ -37,9 +36,8 @@ const logTime = (name, days) => {
 
 const event = getRandEvent();
 const days = getTrainingDays(event);
-// Define a `name` variable. Use it as an argument after updating logEvent and logTime 
 
-const name = "Test Name";
+const name = "Boba Fett"; //name value can change
 logEvent(name, event);
 logTime(name, days);
 
